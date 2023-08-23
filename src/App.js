@@ -33,10 +33,10 @@ function App() {
         </thead>
         <tbody>
           {results.map((result, i) => (
-            <tr>
+            <tr key={i}>
               <td key={i + 'a'}>{result.name}</td>
               <td key={i + 'b'}>{result.size}</td>
-              <td key={i}>{result.time}</td>
+              <td key={i + 'c'}>{result.time}</td>
             </tr>
           ))}
         </tbody>
